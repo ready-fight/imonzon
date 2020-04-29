@@ -1,3 +1,4 @@
+<?php $basename = basename($_SERVER['REQUEST_URI']) ?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -31,27 +32,29 @@
             </div>
         </div>
         <div class="flex">
-            <div class="nav-item"><input type="text" placeholder="Search"></div>
+            <div class="nav-item"><input type="text" placeholder="Search">
+                <div class="search-btn"><i class="fas fa-search"></i></div>
+            </div>
             <div class="nav-item"><a href="<?= get_site_url() ?>/cart"><i class="fas fa-shopping-cart"></i>
-            (<span id="shopping-cart-count">0</span>)<span> Cart | Checkout</span></a></div>
+                    (<span id="shopping-cart-count">0</span>)<span> Cart | Checkout</span></a></div>
         </div>
         <div class="area-01">
             <div class="menu">
                 <ul class="menu-list">
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">CONTACT US</a></li>
-                    <li><a href="#">Barro-Clay-Cemt</a></li>
-                    <li><a href="#">Crowns-Coronas</a></li>
-                    <li><a href="#">Cuentas-Beaded</a></li>
-                    <li><a href="#">Esentincal</a></li>
-                    <li><a href="#">Herramientas-Tools</a></li>
-                    <li><a href="#">Hierro-Iron</a></li>
-                    <li><a href="#">Madera-Wood</a></li>
-                    <li><a href="#">Metal</a></li>
-                    <li><a href="#">Pilon/Bateas/Lebrillos</a></li>
-                    <li><a href="#">Images</a></li>
-                    <li><a href="#">Sopera</a></li>
-                    <li><a href="#">MISC</a></li>
-                    <li><a href="#">Resources/Informacion</a></li>
+                    <li><a class="<?php if ($basename == 'imonzon') echo 'active' ?>" href="<?= get_site_url() ?>">HOME</a></li>
+                    <li><a class="<?php if ($basename == 'contact-us') echo 'active' ?>" href="<?= get_site_url() ?>/contact-us">CONTACT US</a></li>
+                    <li><a class="<?php if ($basename == 'barro-clay-cemt') echo 'active' ?>" href="<?= get_site_url() ?>/barro-clay-cemt">Barro-Clay-Cemt</a></li>
+                    <li><a class="<?php if ($basename == 'crowns-coronas') echo 'active' ?>" href="<?= get_site_url() ?>/crowns-coronas">Crowns-Coronas</a></li>
+                    <li><a class="<?php if ($basename == 'cuentas-beaded') echo 'active' ?>" href="<?= get_site_url() ?>/cuentas-beaded">Cuentas-Beaded</a></li>
+                    <li><a class="<?php if ($basename == 'esentincal') echo 'active' ?>" href="<?= get_site_url() ?>/esentincal">Esentincal</a></li>
+                    <li><a class="<?php if ($basename == 'herramientas-tools') echo 'active' ?>" href="<?= get_site_url() ?>/herramientas-tools">Herramientas-Tools</a></li>
+                    <li><a class="<?php if ($basename == 'hierro-iron') echo 'active' ?>" href="<?= get_site_url() ?>/hierro-iron">Hierro-Iron</a></li>
+                    <li><a class="<?php if ($basename == 'madera-wood') echo 'active' ?>" href="<?= get_site_url() ?>/madera-wood">Madera-Wood</a></li>
+                    <li><a class="<?php if ($basename == 'metal') echo 'active' ?>" href="<?= get_site_url() ?>/metal">Metal</a></li>
+                    <li><a class="<?php if ($basename == 'pilon-bateas-lebrillos') echo 'active' ?>" href="<?= get_site_url() ?>/pilon-bateas-lebrillos">Pilon/Bateas/Lebrillos</a></li>
+                    <li><a class="<?php if ($basename == 'images') echo 'active' ?>" href="<?= get_site_url() ?>/images">Images</a></li>
+                    <li><a class="<?php if ($basename == 'sopera') echo 'active' ?>" href="<?= get_site_url() ?>/sopera">Sopera</a></li>
+                    <li><a class="<?php if ($basename == 'misc') echo 'active' ?>" href="<?= get_site_url() ?>/misc">MISC</a></li>
+                    <li><a class="<?php if ($basename == 'resources') echo 'active' ?>" href="<?= get_site_url() ?>/resources">Resources/Informacion</a></li>
                 </ul>
             </div>

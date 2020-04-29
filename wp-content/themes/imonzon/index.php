@@ -58,6 +58,7 @@ get_header();
             </p>
             <br>
             <img src="<?= get_template_directory_uri() ?>/images/home/rooster.jpg" alt="">
+            
         </div>
     </div>
 </div>
