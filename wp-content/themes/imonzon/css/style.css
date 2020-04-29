@@ -2,7 +2,8 @@
     box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
     margin: 0;
 }
 
@@ -12,13 +13,56 @@ html, body {
 
 body {
     background: url('../images/home/red_lines.png');
-    margin: 65px;
+    margin: 55px;
     color: #FFF;
     font-family: 'Open Sans', sans-serif;
 }
 
-div, img {
+div,
+img {
     vertical-align: top;
+}
+
+a {
+    color: #FFF;
+    text-decoration: none;
+}
+
+.shopping_cart {
+    display: none;
+    background-color: rgb(250, 250, 250);
+    padding: 15px;
+    color: #000;
+    border-radius: 8px;
+}
+
+.shopping_cart a {
+    color: #000;
+}
+
+.shopping_cart input[type="image"] {
+    max-width: 220px;
+    float: right;
+    margin-top: 25px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav-item:first-child {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+.nav-item input {
+    width: 100%;
+    height: 30px;
+    padding: 2px 8px;
 }
 
 .container {
@@ -54,7 +98,8 @@ div, img {
     right: 0;
 }
 
-.banner .rooster img, .banner .heart img {
+.banner .rooster img,
+.banner .heart img {
     width: 100%;
 }
 
@@ -106,7 +151,7 @@ div, img {
     font-size: .85rem;
     display: block;
     text-decoration: underline;
-    padding: 15px 5px;
+    padding: 8px;
     border-bottom: 1px solid #FFF;
 }
 
@@ -114,8 +159,28 @@ div, img {
     background-color: #672929;
 }
 
-.news {
+.side-content {
     display: inline-block;
-    margin-left: 65px;
+    margin-left: 135px;
     font-size: 1.1rem;
+    width: 710px;
+}
+
+.items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.item {
+    flex: 1 0 25%;
+    margin-bottom: 10px;
+}
+
+.item-image {
+    margin: 10px 0;
+}
+
+.rounded {
+    border-radius: 4px;
 }
